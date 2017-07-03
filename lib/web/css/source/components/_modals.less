@@ -36,6 +36,8 @@
 @modal-popup-image-box-preview__max-width: @modal-popup-image-box-preview-image__max-height + (2 * @indent__base);
 @modal-popup-image-box-preview-image__max-height: 54rem;
 
+@modal-popup-breakpoint-screen__m: @screen__m;
+
 //
 //  Utilities
 //  ---------------------------------------------
@@ -248,7 +250,7 @@
 //  _____________________________________________
 
 //  Mobile transform to modal-slide
-.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @modal-popup-breakpoint-screen__m) {
     .modal-popup {
         &.modal-slide {
             .lib-modal-slide();
